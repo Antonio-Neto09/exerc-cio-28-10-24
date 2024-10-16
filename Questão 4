@@ -1,0 +1,15 @@
+function ehPalindromo(palavra) {
+  
+  palavra = palavra.replace(/\s/g, '').toLowerCase();
+
+  const palavraInvertida = palavra.split('').reverse().join('');
+
+  return palavra === palavraInvertida;
+}
+
+
+const palavra1 = "arara";
+const palavra2 = "banana";
+
+console.log(ehPalindromo(palavra1)); 
+console.log(ehPalindromo(palavra2)); 
